@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
  */
-package jsf;
+package rbt.emsi.benaziz.tpc.tp2benaziz.jsf;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,12 +14,17 @@ import jakarta.enterprise.context.RequestScoped;
  * @author Intissar BENAZIZ
  *
  * backing bean pour stocker la propriété correspondant au champ du formulaire
+ * ce bean est creer pour gerer le form 4
  */
-@Named(value = "bean")
+@Named(value = "bean1")
 @RequestScoped
-public class Bean {
+public class Bean1 {
 
     private int nombre;
+    
+    public Bean1(){
+        
+    }
 
     public int getNombre() {
         return nombre;
@@ -39,7 +44,7 @@ public class Bean {
     }
 
     public String afficher() {
-        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
+        return "affichage_4?nb=" + nombre + "&amp;faces-redirect=true";
     }
 
 }
