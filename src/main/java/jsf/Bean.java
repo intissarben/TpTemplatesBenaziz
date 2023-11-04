@@ -12,7 +12,7 @@ import jakarta.enterprise.context.RequestScoped;
 /**
  *
  * @author Intissar BENAZIZ
- * 
+ *
  * backing bean pour stocker la propriété correspondant au champ du formulaire
  */
 @Named(value = "bean")
@@ -36,6 +36,10 @@ public class Bean {
             l.add(i);
         }
         return l;
+    }
+
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
     }
 
 }
