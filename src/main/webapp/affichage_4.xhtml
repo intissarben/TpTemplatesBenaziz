@@ -19,11 +19,11 @@
         <ui:repeat value="#{bean1.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
-        
-            <br/>
-            <h:link outcome="formulaire_4" value="Saisir un autre nombre">
-                <f:param name="nb" value="#{bean1.nombre}"/>
-            </h:link>
-      
+
+        <br/>
+        <h:link outcome="formulaire_4" value="Saisir un autre nombre">
+            <f:param name="nb" value="#{bean1.nombre}"/>
+        </h:link>
+
     </h:body>
 </html>
